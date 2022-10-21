@@ -1,0 +1,105 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ONBOARDING DESIGN</title>
+     <!-- Custom CSS   -->
+     <link rel="stylesheet" href="styles.css">	
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+     <!-- fontawesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+     integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />		
+
+     <!-- google fonts   -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">     
+</head>
+<body>
+    
+
+    <section class="swiper mySwiper">       
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">
+               <i class="fa-solid fa-mountain-sun"></i> DailyUI  :: 023 
+            </a>
+        </nav>
+        <div class="swiper-wrapper">         
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="images\order.jpg" alt="order image">
+            </div>    
+            <div class="card__content">
+              <span class="card__title">Welcome to insane shopping!</span>             
+              <p class="card__text">Just sign in and start shopping.</p>             
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="images\products.jpg" alt="products image">
+            </div>    
+            <div class="card__content">
+              <span class="card__title">Find your favourites brands</span> 
+              <p class="card__text">Over more than 50.000 products.</p> 
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="images\rewards.jpg" alt="rewards image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">Shop and get rewards</span>              
+              <p class="card__text">The more you click, the more you get.</p>             
+            </div>
+          </div>
+    
+          <div class="card swiper-slide">
+            <div class="card__image">
+              <img src="images\payment.jpg" alt="payment image">
+            </div>
+    
+            <div class="card__content">
+              <span class="card__title">Secure payments</span>              
+              <p class="card__text">Advanced triple layered security.</p>  
+              <span class="card__icons"> <i class="fa-brands fa-cc-visa fa-2x"></i> <i class="fa-brands fa-cc-mastercard fa-2x"></i>
+                <i class="fa-brands fa-cc-paypal fa-2x"></i> <i class="fa-brands fa-cc-amex fa-2x"></i></span>           
+            </div>
+          </div>
+    
+        </div>
+      </section>    
+
+
+ <!-- Swiper JS -->
+ <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+ <!-- Initialize Swiper -->
+ <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+ </script> 
+   
+   
+</body>
+</html>
